@@ -44,3 +44,18 @@ não houve erro.
 
 o algorítmo detalha qual a resposta certa dado a pergunta, ela estima com base em uma porcentagem.
 
+--- RESULTADOS DO LAB 03 ---
+
+#========== PRODUÇÃO DO RELATÓRIO:==============
+
+# 1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
+
+acuracia de modelo: 33.33%
+
+# 2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
+
+
+
+# 3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
+
+
