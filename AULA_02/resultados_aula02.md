@@ -54,8 +54,9 @@ acuracia de modelo: 33.33%
 
 # 2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
 
-
+O modelo utiliza a representação vetorial do CountVectorizer (frequência de palavras) e busca as palavras mais decisivas para dividir o dataset.
 
 # 3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
 
+Em datasets de texto maiores, o número de palavras únicas no vocabulário explode. Sem o parâmetro max_depth, a árvore cresce até memorizar ruídos, regras extremamente específicas e palavras raras do treino.
 
