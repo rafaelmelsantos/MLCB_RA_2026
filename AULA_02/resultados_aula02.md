@@ -60,3 +60,20 @@ O modelo utiliza a representação vetorial do CountVectorizer (frequência de p
 
 Em datasets de texto maiores, o número de palavras únicas no vocabulário explode. Sem o parâmetro max_depth, a árvore cresce até memorizar ruídos, regras extremamente específicas e palavras raras do treino.
 
+--- RESULTADOS DO LAB 04 ---
+
+#========== PRODUÇÃO DO RELATÓRIO:==============
+
+
+1. Descrição do Experimento
+Desenvolvimento de um protótipo de classificação de intenções (NLU) utilizando a biblioteca Scikit-Learn. O dataset contém 15 frases divididas igualmente entre 3 intenções operacionais: `comprar_passagem`, `cancelar_reserva` e `falar_atendente`.
+
+2. Justificativa Técnica
+* **TfidfVectorizer:** Selecionado no lugar do `CountVectorizer` por penalizar termos genéricos de alta frequência (como preposições e artigos) e dar mais destaque a palavras com alto poder de diferenciação semântica (ex: "passagem", "anular", "humano").
+* **LogisticRegression:** Escolhido por ser um algoritmo eficiente para classificação de texto em datasets menores, garantindo boa capacidade de generalização com baixo risco de overfitting.
+
+3. Predição em Frases Inéditas
+O modelo avaliou 3 frases totalmente inéditas (fora do conjunto de treino) e obteve os seguintes resultados:
+1. *"Quero comprar uma passagem barata para Buenos Aires"* → **comprar_passagem**
+2. *"Preciso anular meu bilhete de voo de amanhã"* → **cancelar_reserva**
+3. *"Por favor me passe para um suporte humano"* → **falar_atendente**
