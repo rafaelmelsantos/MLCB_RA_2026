@@ -48,15 +48,15 @@ o algorítmo detalha qual a resposta certa dado a pergunta, ela estima com base 
 
 #========== PRODUÇÃO DO RELATÓRIO:==============
 
-# 1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
+1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
 
 acuracia de modelo: 33.33%
 
-# 2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
+2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
 
 O modelo utiliza a representação vetorial do CountVectorizer (frequência de palavras) e busca as palavras mais decisivas para dividir o dataset.
 
-# 3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
+3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
 
 Em datasets de texto maiores, o número de palavras únicas no vocabulário explode. Sem o parâmetro max_depth, a árvore cresce até memorizar ruídos, regras extremamente específicas e palavras raras do treino.
 
